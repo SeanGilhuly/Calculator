@@ -105,83 +105,109 @@ class ViewController: UIViewController {
         // Row 2 
         // First Button
         let rowTwoFirstButtonLeadingConstraint = NSLayoutConstraint(item: buttonSeven, attribute: .Leading, relatedBy: .Equal, toItem: view, attribute: .Leading, multiplier: 1.0, constant: 0)
-        let rowTwoFirstButtonTopConstraint = NSLayoutConstraint(item: buttonSeven, attribute: .Top, relatedBy: .Equal, toItem: displayLabel, attribute: .Top, multiplier: 1.0, constant: 0)
-        let rowTwoFirstButtonTrailingConstraint = NSLayoutConstraint(item: buttonSeven, attribute: .Trailing, relatedBy: .Equal, toItem: buttonEight, attribute: .Trailing, multiplier: 1.0, constant: 0)
+        let rowTwoFirstButtonTopConstraint = NSLayoutConstraint(item: buttonSeven, attribute: .Top, relatedBy: .Equal, toItem: displayLabel, attribute: .Bottom, multiplier: 1.0, constant: 0)
         // Second Button
-        let rowTwoSecondButtonTopConstraint = NSLayoutConstraint(item: buttonEight, attribute: .Top, relatedBy: .Equal, toItem: displayLabel, attribute: .Top, multiplier: 1.0, constant: 0)
-        let rowTwoSecondButtonTrailingConstraint = NSLayoutConstraint(item: buttonEight, attribute: .Trailing, relatedBy: .Equal, toItem: buttonNine, attribute: .Trailing, multiplier: 1.0, constant: 0)
+        let rowTwoSecondButtonLeadingConstraint = NSLayoutConstraint(item: buttonEight, attribute: .Leading, relatedBy: .Equal, toItem: buttonSeven, attribute: .Trailing, multiplier: 1.0, constant: 0)
+        let rowTwoSecondButtonTopConstraint = NSLayoutConstraint(item: buttonEight, attribute: .Top, relatedBy: .Equal, toItem: displayLabel, attribute: .Bottom, multiplier: 1.0, constant: 0)
         // Third Button
-        let rowTwoThirdButtonTopConstraint = NSLayoutConstraint(item: buttonNine, attribute: .Top, relatedBy: .Equal, toItem: displayLabel, attribute: .Top, multiplier: 1.0, constant: 0)
-        let rowTwoThirdButtonTrailingConstraint = NSLayoutConstraint(item: buttonNine, attribute: .Trailing, relatedBy: .Equal, toItem: buttonDivide, attribute: .Trailing, multiplier: 1.0, constant: 0)
+        let rowTwoThirdButtonLeadingConstraint = NSLayoutConstraint(item: buttonNine, attribute: .Leading, relatedBy: .Equal, toItem: buttonEight, attribute: .Trailing, multiplier: 1.0, constant: 0)
+        let rowTwoThirdButtonTopConstraint = NSLayoutConstraint(item: buttonNine, attribute: .Top, relatedBy: .Equal, toItem: displayLabel, attribute: .Bottom, multiplier: 1.0, constant: 0)
         // Fourth Button
-        let rowTwoFourthButtonTopConstraint = NSLayoutConstraint(item: buttonDivide, attribute: .Top, relatedBy: .Equal, toItem: displayLabel, attribute: .Top, multiplier: 1.0, constant: 0)
+        let rowTwoFourthButtonLeadingConstraint = NSLayoutConstraint(item: buttonDivide, attribute: .Leading, relatedBy: .Equal, toItem: buttonNine, attribute: .Trailing, multiplier: 1.0, constant: 0)
+        let rowTwoFourthButtonTopConstraint = NSLayoutConstraint(item: buttonDivide, attribute: .Top, relatedBy: .Equal, toItem: displayLabel, attribute: .Bottom, multiplier: 1.0, constant: 0)
         let rowTwoFourthButtonTrailingConstraint = NSLayoutConstraint(item: buttonDivide, attribute: .Trailing, relatedBy: .Equal, toItem: view, attribute: .Trailing, multiplier: 1.0, constant: 0)
+
         
-        view.addConstraints([rowTwoFirstButtonLeadingConstraint, rowTwoFirstButtonTopConstraint, rowTwoFirstButtonTrailingConstraint, rowTwoSecondButtonTopConstraint, rowTwoSecondButtonTopConstraint, rowTwoSecondButtonTrailingConstraint, rowTwoThirdButtonTopConstraint, rowTwoThirdButtonTrailingConstraint, rowTwoFourthButtonTopConstraint, rowTwoFourthButtonTrailingConstraint])
+        view.addConstraints([rowTwoFirstButtonLeadingConstraint, rowTwoFirstButtonTopConstraint, rowTwoSecondButtonTopConstraint, rowTwoSecondButtonLeadingConstraint, rowTwoThirdButtonLeadingConstraint, rowTwoThirdButtonTopConstraint, rowTwoFourthButtonTopConstraint, rowTwoFourthButtonLeadingConstraint, rowTwoFourthButtonTrailingConstraint])
         
         // Row 3
         // First Button
         let rowThreeFirstButtonLeadingConstraint = NSLayoutConstraint(item: buttonFour, attribute: .Leading, relatedBy: .Equal, toItem: view, attribute: .Leading, multiplier: 1.0, constant: 0)
-        let rowThreeFirstButtonTopConstraint = NSLayoutConstraint(item: buttonFour, attribute: .Top, relatedBy: .Equal, toItem: buttonSeven, attribute: .Top, multiplier: 1.0, constant: 0)
-        let rowThreeFirstButtonTrailingConstraint = NSLayoutConstraint(item: buttonFour, attribute: .Trailing, relatedBy: .Equal, toItem: buttonFive, attribute: .Trailing, multiplier: 1.0, constant: 0)
+        let rowThreeFirstButtonTopConstraint = NSLayoutConstraint(item: buttonFour, attribute: .Top, relatedBy: .Equal, toItem: buttonSeven, attribute: .Bottom, multiplier: 1.0, constant: 0)
         // Second Button
-        let rowThreeSecondButtonTopConstraint = NSLayoutConstraint(item: buttonFive, attribute: .Top, relatedBy: .Equal, toItem: buttonEight, attribute: .Top, multiplier: 1.0, constant: 0)
-        let rowThreeSecondButtonTrailingConstraint = NSLayoutConstraint(item: buttonFive, attribute: .Trailing, relatedBy: .Equal, toItem: buttonSix, attribute: .Trailing, multiplier: 1.0, constant: 0)
+        let rowThreeSecondButtonLeadingConstraint = NSLayoutConstraint(item: buttonFive, attribute: .Leading, relatedBy: .Equal, toItem: buttonFour, attribute: .Trailing, multiplier: 1.0, constant: 0)
+        let rowThreeSecondButtonTopConstraint = NSLayoutConstraint(item: buttonFive, attribute: .Top, relatedBy: .Equal, toItem: buttonEight, attribute: .Bottom, multiplier: 1.0, constant: 0)
         // Third Button
-        let rowThreeThirdButtonTopConstraint = NSLayoutConstraint(item: buttonSix, attribute: .Top, relatedBy: .Equal, toItem: buttonNine, attribute: .Top, multiplier: 1.0, constant: 0)
-        let rowThreeThirdButtonTrailingConstraint = NSLayoutConstraint(item: buttonSix, attribute: .Trailing, relatedBy: .Equal, toItem: buttonMultiply, attribute: .Trailing, multiplier: 1.0, constant: 0)
+        let rowThreeThirdButtonLeadingConstraint = NSLayoutConstraint(item: buttonSix, attribute: .Leading, relatedBy: .Equal, toItem: buttonFive, attribute: .Trailing, multiplier: 1.0, constant: 0)
+        let rowThreeThirdButtonTopConstraint = NSLayoutConstraint(item: buttonSix, attribute: .Top, relatedBy: .Equal, toItem: buttonNine, attribute: .Bottom, multiplier: 1.0, constant: 0)
         // Fourth Button
-        let rowThreeFourthButtonTopConstraint = NSLayoutConstraint(item: buttonMultiply, attribute: .Top, relatedBy: .Equal, toItem: buttonDivide, attribute: .Top, multiplier: 1.0, constant: 0)
+        let rowThreeFourthButtonLeadingConstraint = NSLayoutConstraint(item: buttonMultiply, attribute: .Leading, relatedBy: .Equal, toItem: buttonSix, attribute: .Trailing, multiplier: 1.0, constant: 0)
+        let rowThreeFourthButtonTopConstraint = NSLayoutConstraint(item: buttonMultiply, attribute: .Top, relatedBy: .Equal, toItem: buttonDivide, attribute: .Bottom, multiplier: 1.0, constant: 0)
         let rowThreeFourthButtonTrailingConstraint = NSLayoutConstraint(item: buttonMultiply, attribute: .Trailing, relatedBy: .Equal, toItem: view, attribute: .Trailing, multiplier: 1.0, constant: 0)
         
-        view.addConstraints([rowThreeFirstButtonLeadingConstraint, rowThreeFirstButtonTopConstraint, rowThreeFirstButtonTrailingConstraint, rowThreeSecondButtonTopConstraint, rowThreeSecondButtonTrailingConstraint, rowThreeThirdButtonTopConstraint, rowThreeThirdButtonTrailingConstraint, rowThreeFourthButtonTopConstraint, rowThreeFourthButtonTrailingConstraint])
+        
+        view.addConstraints([rowThreeFirstButtonLeadingConstraint, rowThreeFirstButtonTopConstraint, rowThreeFirstButtonLeadingConstraint, rowThreeSecondButtonTopConstraint, rowThreeSecondButtonLeadingConstraint, rowThreeThirdButtonTopConstraint, rowThreeThirdButtonLeadingConstraint, rowThreeFourthButtonTopConstraint, rowThreeFourthButtonLeadingConstraint, rowThreeFourthButtonTrailingConstraint])
         
         // Row 4
         // First Button
         let rowFourFirstButtonLeadingConstraint = NSLayoutConstraint(item: buttonOne, attribute: .Leading, relatedBy: .Equal, toItem: view, attribute: .Leading, multiplier: 1.0, constant: 0)
-        let rowFourFirstButtonTopConstraint = NSLayoutConstraint(item: buttonOne, attribute: .Top, relatedBy: .Equal, toItem: buttonFour, attribute: .Top, multiplier: 1.0, constant: 0)
-        let rowFourFirstButtonTrailingConstraint = NSLayoutConstraint(item: buttonOne, attribute: .Trailing, relatedBy: .Equal, toItem: buttonTwo, attribute: .Trailing, multiplier: 1.0, constant: 0)
+        let rowFourFirstButtonTopConstraint = NSLayoutConstraint(item: buttonOne, attribute: .Top, relatedBy: .Equal, toItem: buttonFour, attribute: .Bottom, multiplier: 1.0, constant: 0)
         // Second Button
-        let rowFourSecondButtonTopConstraint = NSLayoutConstraint(item: buttonTwo, attribute: .Top, relatedBy: .Equal, toItem: buttonFive, attribute: .Top, multiplier: 1.0, constant: 0)
-        let rowFourSecondButtonTrailingConstraint = NSLayoutConstraint(item: buttonTwo, attribute: .Trailing, relatedBy: .Equal, toItem: buttonThree, attribute: .Trailing, multiplier: 1.0, constant: 0)
+        let rowFourSecondButtonLeadingConstraint = NSLayoutConstraint(item: buttonTwo, attribute: .Leading, relatedBy: .Equal, toItem: buttonOne, attribute: .Trailing, multiplier: 1.0, constant: 0)
+        let rowFourSecondButtonTopConstraint = NSLayoutConstraint(item: buttonTwo, attribute: .Top, relatedBy: .Equal, toItem: buttonFive, attribute: .Bottom, multiplier: 1.0, constant: 0)
         // Third Button
-        let rowFourThirdButtonTopConstraint = NSLayoutConstraint(item: buttonThree, attribute: .Top, relatedBy: .Equal, toItem: buttonSix, attribute: .Top, multiplier: 1.0, constant: 0)
-        let rowFourThirdButtonTrailingConstraint = NSLayoutConstraint(item: buttonThree, attribute: .Trailing, relatedBy: .Equal, toItem: buttonSubtract, attribute: .Trailing, multiplier: 1.0, constant: 0)
+        let rowFourThirdButtonLeadingConstraint = NSLayoutConstraint(item: buttonThree, attribute: .Leading, relatedBy: .Equal, toItem: buttonTwo, attribute: .Trailing, multiplier: 1.0, constant: 0)
+        let rowFourThirdButtonTopConstraint = NSLayoutConstraint(item: buttonThree, attribute: .Top, relatedBy: .Equal, toItem: buttonSix, attribute: .Bottom, multiplier: 1.0, constant: 0)
         // Fourth Button
-        let rowFourFourthButtonTopConstraint = NSLayoutConstraint(item: buttonSubtract, attribute: .Top, relatedBy: .Equal, toItem: buttonMultiply, attribute: .Top, multiplier: 1.0, constant: 0)
+        let rowFourFourthButtonLeadingConstraint = NSLayoutConstraint(item: buttonSubtract, attribute: .Leading, relatedBy: .Equal, toItem: buttonThree, attribute: .Trailing, multiplier: 1.0, constant: 0)
+        let rowFourFourthButtonTopConstraint = NSLayoutConstraint(item: buttonSubtract, attribute: .Top, relatedBy: .Equal, toItem: buttonMultiply, attribute: .Bottom, multiplier: 1.0, constant: 0)
         let rowFourFourthButtonTrailingConstraint = NSLayoutConstraint(item: buttonSubtract, attribute: .Trailing, relatedBy: .Equal, toItem: view, attribute: .Trailing, multiplier: 1.0, constant: 0)
         
-        view.addConstraints([rowFourFirstButtonLeadingConstraint, rowFourFirstButtonTopConstraint, rowFourFirstButtonTrailingConstraint, rowFourSecondButtonTopConstraint, rowFourSecondButtonTrailingConstraint, rowFourThirdButtonTopConstraint, rowFourThirdButtonTrailingConstraint, rowFourFourthButtonTopConstraint, rowFourFourthButtonTrailingConstraint])
+        
+        view.addConstraints([rowFourFirstButtonLeadingConstraint, rowFourFirstButtonTopConstraint, rowFourSecondButtonTopConstraint, rowFourSecondButtonLeadingConstraint, rowFourThirdButtonTopConstraint, rowFourThirdButtonLeadingConstraint, rowFourFourthButtonTopConstraint, rowFourFourthButtonLeadingConstraint, rowFourFourthButtonTrailingConstraint])
         
         // Row 5
         // First Button
         let rowFiveFirstButtonLeadingConstraint = NSLayoutConstraint(item: buttonZero, attribute: .Leading, relatedBy: .Equal, toItem: view, attribute: .Leading, multiplier: 1.0, constant: 0)
-        let rowFiveFirstButtonTopConstraint = NSLayoutConstraint(item: buttonZero, attribute: .Top, relatedBy: .Equal, toItem: buttonOne, attribute: .Top, multiplier: 1.0, constant: 0)
-        let rowFiveFirstButtonTrailingConstraint = NSLayoutConstraint(item: buttonZero, attribute: .Trailing, relatedBy: .Equal, toItem: buttonEnter, attribute: .Trailing, multiplier: 1.0, constant: 0)
+        let rowFiveFirstButtonTopConstraint = NSLayoutConstraint(item: buttonZero, attribute: .Top, relatedBy: .Equal, toItem: buttonOne, attribute: .Bottom, multiplier: 1.0, constant: 0)
         let rowFiveFirstButtonBottomConstraint = NSLayoutConstraint(item: buttonZero, attribute: .Bottom, relatedBy: .Equal, toItem: view, attribute: .Bottom, multiplier: 1.0, constant: 0)
         // Second Button
-        let rowFiveSecondButtonTopConstraint = NSLayoutConstraint(item: buttonEnter, attribute: .Top, relatedBy: .Equal, toItem: buttonThree, attribute: .Top, multiplier: 1.0, constant: 0)
-        let rowFiveSecondButtonTrailingConstraint = NSLayoutConstraint(item: buttonEnter, attribute: .Trailing, relatedBy: .Equal, toItem: buttonAdd, attribute: .Trailing, multiplier: 1.0, constant: 0)
+        let rowFiveSecondButtonLeadingConstraint = NSLayoutConstraint(item: buttonEnter, attribute: .Leading, relatedBy: .Equal, toItem: buttonZero, attribute: .Trailing, multiplier: 1.0, constant: 0)
+        let rowFiveSecondButtonTopConstraint = NSLayoutConstraint(item: buttonEnter, attribute: .Top, relatedBy: .Equal, toItem: buttonThree, attribute: .Bottom, multiplier: 1.0, constant: 0)
         let rowFiveSecondButtonBottomConstraint = NSLayoutConstraint(item: buttonEnter, attribute: .Bottom, relatedBy: .Equal, toItem: view, attribute: .Bottom, multiplier: 1.0, constant: 0)
         // Third Button
-        let rowFiveThirdButtonTopConstraint = NSLayoutConstraint(item: buttonAdd, attribute: .Top, relatedBy: .Equal, toItem: buttonSubtract, attribute: .Top, multiplier: 1.0, constant: 0)
-        let rowFiveThirdButtonTrailingConstraint = NSLayoutConstraint(item: buttonAdd, attribute: .Trailing, relatedBy: .Equal, toItem: view, attribute: .Trailing, multiplier: 1.0, constant: 0)
+        let rowFiveThirdButtonLeadingConstraint = NSLayoutConstraint(item: buttonAdd, attribute: .Leading, relatedBy: .Equal, toItem: buttonEnter, attribute: .Trailing, multiplier: 1.0, constant: 0)
+        let rowFiveThirdButtonTopConstraint = NSLayoutConstraint(item: buttonAdd, attribute: .Top, relatedBy: .Equal, toItem: buttonSubtract, attribute: .Bottom, multiplier: 1.0, constant: 0)
         let rowFiveThirdButtonBottomConstraint = NSLayoutConstraint(item: buttonAdd, attribute: .Bottom, relatedBy: .Equal, toItem: view, attribute: .Bottom, multiplier: 1.0, constant: 0)
         
-        view.addConstraints([rowFiveFirstButtonLeadingConstraint, rowFiveFirstButtonTopConstraint, rowFiveFirstButtonTrailingConstraint, rowFiveFirstButtonTrailingConstraint, rowFiveFirstButtonBottomConstraint, rowFiveSecondButtonTopConstraint, rowFiveSecondButtonTrailingConstraint, rowFiveSecondButtonBottomConstraint, rowFiveThirdButtonTopConstraint, rowFiveThirdButtonTrailingConstraint, rowFiveThirdButtonBottomConstraint])
+        view.addConstraints([rowFiveFirstButtonLeadingConstraint, rowFiveFirstButtonTopConstraint, rowFiveFirstButtonLeadingConstraint, rowFiveFirstButtonLeadingConstraint, rowFiveFirstButtonBottomConstraint, rowFiveSecondButtonTopConstraint, rowFiveSecondButtonLeadingConstraint, rowFiveSecondButtonBottomConstraint, rowFiveThirdButtonTopConstraint, rowFiveThirdButtonLeadingConstraint, rowFiveThirdButtonBottomConstraint])
         
-    }
-
- 
-    
-
+        // Button Heights
+        let buttonOneHeight = NSLayoutConstraint(item: buttonOne, attribute: .Height, relatedBy: .Equal, toItem: view, attribute: .Height, multiplier: 0.1875, constant: 0)
+        let buttonTwoHeight = NSLayoutConstraint(item: buttonTwo, attribute: .Height, relatedBy: .Equal, toItem: view, attribute: .Height, multiplier: 0.1875, constant: 0)
+        let buttonThreeHeight = NSLayoutConstraint(item: buttonThree, attribute: .Height, relatedBy: .Equal, toItem: view, attribute: .Height, multiplier: 0.1875, constant: 0)
+        let buttonFourHeight = NSLayoutConstraint(item: buttonFour, attribute: .Height, relatedBy: .Equal, toItem: view, attribute: .Height, multiplier: 0.1875, constant: 0)
+        let buttonFiveHeight = NSLayoutConstraint(item: buttonFive, attribute: .Height, relatedBy: .Equal, toItem: view, attribute: .Height, multiplier: 0.1875, constant: 0)
+        let buttonSixHeight = NSLayoutConstraint(item: buttonSix, attribute: .Height, relatedBy: .Equal, toItem: view, attribute: .Height, multiplier: 0.1875, constant: 0)
+        let buttonSevenHeight = NSLayoutConstraint(item: buttonSeven, attribute: .Height, relatedBy: .Equal, toItem: view, attribute: .Height, multiplier: 0.1875, constant: 0)
+        let buttonEightHeight = NSLayoutConstraint(item: buttonEight, attribute: .Height, relatedBy: .Equal, toItem: view, attribute: .Height, multiplier: 0.1875, constant: 0)
+        let buttonNineHeight = NSLayoutConstraint(item: buttonNine, attribute: .Height, relatedBy: .Equal, toItem: view, attribute: .Height, multiplier: 0.1875, constant: 0)
+        let buttonZeroHeight = NSLayoutConstraint(item: buttonZero, attribute: .Height, relatedBy: .Equal, toItem: view, attribute: .Height, multiplier: 0.1875, constant: 0)
+        let buttonEnterHeight = NSLayoutConstraint(item: buttonEnter, attribute: .Height, relatedBy: .Equal, toItem: view, attribute: .Height, multiplier: 0.1875, constant: 0)
+        let buttonDivideHeight = NSLayoutConstraint(item: buttonDivide, attribute: .Height, relatedBy: .Equal, toItem: view, attribute: .Height, multiplier: 0.1875, constant: 0)
+        let buttonSubtractHeight = NSLayoutConstraint(item: buttonSubtract, attribute: .Height, relatedBy: .Equal, toItem: view, attribute: .Height, multiplier: 0.1875, constant: 0)
+        let buttonMultiplyHeight = NSLayoutConstraint(item: buttonMultiply, attribute: .Height, relatedBy: .Equal, toItem: view, attribute: .Height, multiplier: 0.1875, constant: 0)
+        
+        view.addConstraints([buttonOneHeight, buttonTwoHeight, buttonThreeHeight, buttonFourHeight, buttonFiveHeight, buttonSixHeight, buttonSevenHeight, buttonEightHeight, buttonNineHeight, buttonZeroHeight, buttonEnterHeight, buttonDivideHeight, buttonSubtractHeight, buttonMultiplyHeight])
+        
+        
+        // Button Widths
+        let buttonOneWidth = NSLayoutConstraint(item: buttonOne, attribute: .Width, relatedBy: .Equal, toItem: view, attribute: .Width, multiplier: 0.25, constant: 0)
+        let buttonTwoWidth = NSLayoutConstraint(item: buttonTwo, attribute: .Width, relatedBy: .Equal, toItem: view, attribute: .Width, multiplier: 0.25, constant: 0)
+        let buttonThreeWidth = NSLayoutConstraint(item: buttonThree, attribute: .Width, relatedBy: .Equal, toItem: view, attribute: .Width, multiplier: 0.25, constant: 0)
+        let buttonFourWidth = NSLayoutConstraint(item: buttonFour, attribute: .Width, relatedBy: .Equal, toItem: view, attribute: .Width, multiplier: 0.25, constant: 0)
+        let buttonFiveWidth = NSLayoutConstraint(item: buttonFive, attribute: .Width, relatedBy: .Equal, toItem: view, attribute: .Width, multiplier: 0.25, constant: 0)
+        let buttonSixWidth = NSLayoutConstraint(item: buttonSix, attribute: .Width, relatedBy: .Equal, toItem: view, attribute: .Width, multiplier: 0.25, constant: 0)
+        let buttonSevenWidth = NSLayoutConstraint(item: buttonSeven, attribute: .Width, relatedBy: .Equal, toItem: view, attribute: .Width, multiplier: 0.25, constant: 0)
+        let buttonEightWidth = NSLayoutConstraint(item: buttonEight, attribute: .Width, relatedBy: .Equal, toItem: view, attribute: .Width, multiplier: 0.25, constant: 0)
+        let buttonNineWidth = NSLayoutConstraint(item: buttonNine, attribute: .Width, relatedBy: .Equal, toItem: view, attribute: .Width, multiplier: 0.25, constant: 0)
+        let buttonAddWidth = NSLayoutConstraint(item: buttonAdd, attribute: .Width, relatedBy: .Equal, toItem: view, attribute: .Width, multiplier: 0.25, constant: 0)
+        let buttonSubtractWidth = NSLayoutConstraint(item: buttonSubtract, attribute: .Width, relatedBy: .Equal, toItem: view, attribute: .Width, multiplier: 0.25, constant: 0)
+        let buttonMultiplyWidth = NSLayoutConstraint(item: buttonMultiply, attribute: .Width, relatedBy: .Equal, toItem: view, attribute: .Width, multiplier: 0.25, constant: 0)
+        let buttonEnterWidth = NSLayoutConstraint(item: buttonEnter, attribute: .Width, relatedBy: .Equal, toItem: view, attribute: .Width, multiplier: 0.25, constant: 0)
+        let buttonZeroWidth = NSLayoutConstraint(item: buttonZero, attribute: .Width, relatedBy: .Equal, toItem: view, attribute: .Width, multiplier: 0.50, constant: 0)
+        
+        
+        view.addConstraints([buttonOneWidth, buttonTwoWidth, buttonThreeWidth, buttonFourWidth, buttonFiveWidth, buttonSixWidth, buttonSevenWidth, buttonEightWidth, buttonNineWidth, buttonAddWidth, buttonSubtractWidth, buttonMultiplyWidth, buttonEnterWidth, buttonZeroWidth])
+        }
 }
-
-
-
-
-
-
-
-
-
