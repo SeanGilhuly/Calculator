@@ -71,6 +71,22 @@ class ViewController: UIViewController {
         view.addSubview(buttonMultiply)
         view.addSubview(buttonSubtract)
         view.addSubview(buttonAdd)
+        
+        buttonZero.setTitle("0", forState: .Normal)
+        buttonOne.setTitle("1", forState: .Normal)
+        buttonTwo.setTitle("2", forState: .Normal)
+        buttonThree.setTitle("3", forState: .Normal)
+        buttonFour.setTitle("4", forState: .Normal)
+        buttonFive.setTitle("5", forState: .Normal)
+        buttonSix.setTitle("6", forState: .Normal)
+        buttonSeven.setTitle("7", forState: .Normal)
+        buttonEight.setTitle("8", forState: .Normal)
+        buttonNine.setTitle("9", forState: .Normal)
+        buttonEnter.setTitle("Enter", forState: .Normal)
+        buttonAdd.setTitle("+", forState: .Normal)
+        buttonMultiply.setTitle("*", forState: .Normal)
+        buttonDivide.setTitle("/", forState: .Normal)
+        buttonSubtract.setTitle("-", forState: .Normal)
     }
     
     
